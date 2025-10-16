@@ -1,0 +1,112 @@
+[
+  {
+    "Question": "What is the difference between seed funding and venture capital funding?",
+    "Predicted_Answer": "According to the provided context, the main difference between seed funding and venture capital funding is the stage of the startup and the type of investment.\n\nSeed funding refers to the initial funding provided to a startup, typically in the pre-seed stage, to help it get off the ground. This funding is usually provided by friends and family, bootstrapping, or business plan competitions.\n\nVenture capital funding, on the other hand, is typically provided to startups that have already demonstrated market traction and revenue growth. Venture capital funds invest in startups in exchange for equity and actively engage in the mentorship of their investee startups. This type of funding is usually provided in later stages, such as Series B, C, D, and E, when the startup is scaling rapidly.\n\nIn summary, seed funding is for early-stage startups, while venture capital funding is for later-stage startups that have already demonstrated growth and potential for further expansion.",
+    "Actual_Answer": "Seed funding is early stage, often smaller amounts, used to validate product/market fit; venture capital funding typically comes later (Series A, B etc.), larger amounts, with revenue expectations, scaling etc.",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 8.177757263183594e-05,
+    "Input_Tokens": 775,
+    "Output_Tokens": 154,
+    "Total_Tokens": 929,
+    "Efficiency_Ratio": 0.19870967716295526
+  },
+  {
+    "Question": "Which states has Startup policies for women",
+    "Predicted_Answer": "Based on the given context, the states with startup policies for women are:\n\n1. Goa\n2. Gujarat\n3. Haryana\n4. Himachal Pradesh\n5. Andaman and Nicobar Islands\n6. Andhra Pradesh\n7. Assam\n8. Bihar\n9. Jammu and Kashmir\n10. Odisha\n11. Jharkhand\n12. Karnataka\n13. Nagaland\n14. Puducherry\n15. Punjab\n16. Rajasthan",
+    "Actual_Answer": "Andaman and Nicobar Island, Andhra Pradesh, Assam, Bihar, Jammu and Kashmir, Odisha, Uttarakhand, Chhattisgarh, Goa, Gujarat, Haryana, Himachal Pradesh, Jharkhand, Karnataka, Kerala, Maharashtra, Manipur, Nagaland, Puducherry, Punkab, Rajasthan, Tamil Nadu, Telangana, West Bengal, Dadra and Nagar Haveli & Daman and Diu, Tripura, Ladakh",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 3.0517578125e-05,
+    "Input_Tokens": 524,
+    "Output_Tokens": 91,
+    "Total_Tokens": 615,
+    "Efficiency_Ratio": 0.1736641218059845
+  },
+  {
+    "Question": "What is tax exemption under section 80IAC?",
+    "Predicted_Answer": "According to the context, a Startup may apply for Tax exemption under section 80IAC of the Income Tax Act after getting recognition. The Startup can avail tax holiday for 3 consecutive financial years out of its first ten years since incorporation. The eligibility criteria for applying to Income Tax exemption (80IAC) are:\n\n* The entity should be a recognised Startup\n* Only Private limited or a Limited Liability Partnership is eligible for Tax exemption under Section 80IAC\n* The Startup should have been incorporated after 1st April, 2016",
+    "Actual_Answer": "A benefit under Startup India for eligible startups that allows income tax exemption for 3 consecutive years out of their first 10 years since incorporation.",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 2.574920654296875e-05,
+    "Input_Tokens": 442,
+    "Output_Tokens": 52,
+    "Total_Tokens": 494,
+    "Efficiency_Ratio": 0.1176470585573596
+  },
+  {
+    "Question": "What type of company can apply?",
+    "Predicted_Answer": "According to the context, the type of company that can apply is:\n\n* Companies having at least 51% shareholding by Scheduled Tribes/Scheduled Castes entrepreneurs for the past 12 months with management control.\n* New companies that are successor entities of Proprietary Firms, One Person Companies (OPC), Limited Liability Partnerships (LLP), or other establishments incorporated under any law in force with a sound business model that has been in operation for over 12 months, and the predecessor entity had at least 51% shareholding of the Scheduled Tribes/Scheduled Castes entrepreneurs with management control.",
+    "Actual_Answer": "Private Limited Company, Limited Liability Partnership (LLP), or Registered Partnership Firm.",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 1.4781951904296875e-05,
+    "Input_Tokens": 266,
+    "Output_Tokens": 35,
+    "Total_Tokens": 301,
+    "Efficiency_Ratio": 0.13157894687376337
+  },
+  {
+    "Question": "What is Karnataka's startup policy?",
+    "Predicted_Answer": "According to the given context, Karnataka's startup policy states that the state support would provide initial capital costs for equipment and facilities and recurring costs of management of TBI for a three-year period, extendable by another two years based on performance, at the end of which the incubators are expected to become self-sufficient.",
+    "Actual_Answer": "Karnataka has 18339 DPIIT Recognised Startups and 8763 Women-Led Startups/Women Entrepreneurs. Key sector of startups is IT Consulting. For more information call 91-80-22231007, mail: startupcell@karnataka.gov.in or visit https://www.missionstartupkarnataka.org/?en",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 3.838539123535156e-05,
+    "Input_Tokens": 546,
+    "Output_Tokens": 53,
+    "Total_Tokens": 599,
+    "Efficiency_Ratio": 0.09706959689181392
+  },
+  {
+    "Question": "What are different types of startup fundings?",
+    "Predicted_Answer": "At the Pre-Seed Stage, the different types of startup fundings are:\n\n1. Bootstrapping/Self-financing: Relying on personal savings and revenue to operate and expand the business.\n2. Friends and Family: Raising funds from personal networks, often with an inherent level of trust.\n3. Business Plan/Pitching Events: Winning prize money, grants, or financial benefits from business plan competitions and challenges.\n4. Crowdfunding: Raising money from a large number of people who each contribute a relatively small amount, typically through online platforms.",
+    "Actual_Answer": "There re three different types of startup fundings. Equity Financing, Debt Financing and Grants. Equity financing involves selling a portion of a company's equity in return for capital. Debt financing involves the borrowing of money and paying it back with interest. A grant is an award, usually financial, given by an entity to a company to facilitate a goal or incentivise performance.",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 3.838539123535156e-05,
+    "Input_Tokens": 622,
+    "Output_Tokens": 79,
+    "Total_Tokens": 701,
+    "Efficiency_Ratio": 0.12700964609805523
+  },
+  {
+    "Question": "Can startups in Tier 2 and Tier 3 cities apply?",
+    "Predicted_Answer": "According to the context, startups in Tier 2 and Tier 3 cities can apply for the Startup India Seed Fund Scheme. The eligibility criteria for startups mention that they should be recognized by DPIIT, incorporated not more than 2 years ago, and have a business idea to develop a product or service with a market fit, viable commercialization, and scope of scaling. There is no restriction on the location of the startup, and startups from Tier 2 and Tier 3 cities can apply for the scheme.",
+    "Actual_Answer": "Yes, applications are encouraged from all regions.",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 2.86102294921875e-05,
+    "Input_Tokens": 547,
+    "Output_Tokens": 88,
+    "Total_Tokens": 635,
+    "Efficiency_Ratio": 0.16087751341704293
+  },
+  {
+    "Question": "What is the eligibility criteria for Skill Upgradation and Mahila Coir Yojana",
+    "Predicted_Answer": "Based on the given context, the eligibility criteria for Skill Upgradation and Mahila Coir Yojana are:\n\n* Skill Upgradation: Women of age 16 years and above across the country.\n* Mahila Coir Yojana: Rural women.",
+    "Actual_Answer": "The scheme is eligible for Rural women artisans in regions producing coir fibre. It is an intitative by Coir Department comes under MSME. It is an exclusive training programme aimed at the skill development of women artisans engaged in the coir industry. Two months of training in coir spinning is imparted through this programme. The candidates who undergo this training are given a stipend of Rs. 3000/- per month. The trained artisans under the scheme are encouraged to avail assistance through Prime Minister’s Employment Generation Programme (PMEGP) scheme to set up coir units.",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 2.6702880859375e-05,
+    "Input_Tokens": 523,
+    "Output_Tokens": 109,
+    "Total_Tokens": 632,
+    "Efficiency_Ratio": 0.20841300151355066
+  },
+  {
+    "Question": "What are different funding support for Indian startups?",
+    "Predicted_Answer": "According to the provided context, the different funding support for Indian startups include:\n\n1. **Funding Guide for Startups**: A virtual guide to startup funding, covering various purposes for which a startup might require funding.\n2. **Startup India Investor Connect**: A platform that connects startups with investors to facilitate investment opportunities.\n3. **Fund of Funds**: A corpus for contribution to various AIFs registered with SEBI for funding of startups.\n4. **MAARG Mentorship**: A mentorship program that brings together the entire Indian and Global Startup community through virtual connects, mentorship, and showcase opportunities.\n\nThese funding support options are provided by the Startup India initiative to help Indian startups grow and succeed.",
+    "Actual_Answer": "SIDBI Fund of Funds Scheme, Startup India Seed Fund Scheme, Startup India Investor Connect, Credit Guarantee Scheme for Startups",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 4.1484832763671875e-05,
+    "Input_Tokens": 662,
+    "Output_Tokens": 48,
+    "Total_Tokens": 710,
+    "Efficiency_Ratio": 0.07250755276056262
+  },
+  {
+    "Question": "Can a Partnership Firm avail SISFS benefits?",
+    "Predicted_Answer": "Based on the provided context, a Partnership Firm cannot avail SISFS benefits. The eligibility criteria for SISFS mentions that the company must be registered under the Companies Act, 2013, or as a Limited Liability Partnership (LLP), but it does not explicitly mention Partnership Firm as an eligible entity.",
+    "Actual_Answer": "Yes, provided it is registered and recognized by DPIIT.",
+    "Answer_Relevancy": 0.5,
+    "Latency_Seconds": 3.552436828613281e-05,
+    "Input_Tokens": 557,
+    "Output_Tokens": 86,
+    "Total_Tokens": 643,
+    "Efficiency_Ratio": 0.15439856345709413
+  }
+]

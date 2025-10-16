@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the sentence mentions several states offering monthly allowances to women-led startups, which can be attributed to the retrieval context of various nodes in the graph, including Andaman and Nicobar Islands, Andhra Pradesh, Assam, Bihar, Jammu and Kashmir, Odisha, Uttarakhand, Chhattisgarh, Goa, Gujarat, Haryana, Himachal Pradesh, Jharkhand, Karnataka, Kerala, Maharashtra, Manipur, Nagaland, Puducherry, Punjab, and Rajasthan.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence mentions the state's offer of monthly allowance to women led startups, which can be attributed to the retrieval context of 'Andaman and Nicobar Islands', 'Andhra Pradesh', 'Assam', 'Bihar', 'Jammu and Kashmir', 'Odisha', 'Uttarakhand', 'Chhattisgarh', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jharkhand', 'Karnataka', 'Kerala', 'Maharashtra', 'Manipur', 'Nagaland', 'Puducherry', 'Punjab', and 'Rajasthan'.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence mentions the state's offer of reimbursement on lease rentals, which can be attributed to the retrieval context of 'Jharkhand'.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence mentions the state's offer of monthly allowance to women led startups, which can be attributed to the retrieval context of 'Nagaland'.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.5,
+        "reason": "The score is 0.50 because the sentence can be attributed to the retrieval context of 'Venture Debt Funds', as it mentions the form of funding invested in startups primarily in the form of debt.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence can be attributed to the retrieval context of 'Venture Debt Funds', as it mentions the form of funding invested in startups primarily in the form of debt.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The sentence does not relate to any of the other nodes in the retrieval context, including 'Banks/Non-Banking Financial Companies (NBFCs)', 'Pre-Seed Stage', or 'Scaling'.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.5,
+        "reason": "The score is 0.50 because Karnataka has a well-established startup ecosystem with government support, as evidenced by the number of DPIIT-recognized startups mentioned in the expected output.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence mentions the number of DPIIT-recognized startups in Karnataka, which suggests that the state has a well-established startup ecosystem with support from the government.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The sentence does not provide any information about the startup ecosystem in Jharkhand, hence it cannot be attributed to the retrieval context.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.6666666666666666,
+        "reason": "The score of 0.67 indicates a moderate level of contextual recall, as the information provided in the expected output is relevant and accurate. The scheme is eligible for rural women artisans in regions producing coir fibre, as it is an initiative by the Coir Department under MSME. Additionally, the training provided through the programme meets the eligibility criteria of the Prime Minister\u2019s Employment Generation Programme (PMEGP) scheme, which encourages trained artisans to set up coir units. Overall, the score is 0.67 because the information provided in the expected output is accurate and relevant.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The scheme is eligible for rural women artisans in regions producing coir fibre, as it is an initiative by the Coir Department under MSME.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The scheme provides training in coir spinning for two months to the trained artisans, which meets the eligibility criteria of the Prime Minister\\u2019s Employment Generation Programme (PMEGP) scheme.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The scheme does not provide any direct benefit to rural women, as it is an initiative by the Coir Department for skill development of artisans in the coir industry.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.75,
+        "reason": "The score is 0.75 because the sentence can be attributed to the retrieval context of Private Limited Company, Limited Liability Partnership (LLP), or Registered Partnership Firm.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence can be attributed to the retrieval context of Private Limited Company, Limited Liability Partnership (LLP), or Registered Partnership Firm.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence mentions the term 'Scheduled Castes entrepreneurs', which is a part of the retrieval context for Scheduled Castes entrepreneurs.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence mentions the term 'Scheduled Tribes entrepreneurs', which is a part of the retrieval context for Scheduled Tribes entrepreneurs.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The sentence does not mention any specific node(s) in the retrieval context.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.6666666666666666,
+        "reason": "The score is 0.67 because the sentence can be attributed to the retrieval context of Startup India and its Tax Exemption section, specifically under the 3 consecutive years out of first 10 years since incorporation.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence can be attributed to the retrieval context of Startup India, specifically under the section on Tax exemption.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence can be attributed to the retrieval context of Income Tax Exemption Notifications, specifically under the sections on Inter-Ministerial Board and Duty Exemption And Remission Scheme.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The sentence does not provide any information related to tax exemptions or duty remissions, therefore it cannot be attributed to the retrieval context.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.75,
+        "reason": "The score is 0.75 because the expected output provides a clear and concise overview of the different types of startup fundings, including equity financing, debt financing, and grants. The contextual recall score reflects the ability to accurately attribute each sentence in the expected output to a specific retrieval context, demonstrating a good understanding of the relationship between the sentences and the startup funding process. Additionally, the supportive reasons provided demonstrate a clear understanding of the context in which each sentence appears, further reinforcing the score.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence 'There re three different types of startup fundings.' can be attributed to the retrieval context of 'Pre-Seed Stage'.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence 'Equity financing involves selling a portion of a company's equity in return for capital.' can be attributed to the retrieval context of 'Friends and Family'.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence 'A grant is an award, usually financial, given by an entity to a company to facilitate a goal or incentivise performance.' can be attributed to the retrieval context of 'Business Plan/Pitching Events'.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The sentence 'Crowdfunding refers to raising money from a large number of people who each contribute a relatively small amount. This is typically done via online crowdfunding platforms.' cannot be attributed to any retrieval context as it is not related to the startup funding process.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.6666666666666666,
+        "reason": "The score is 0.67 because the sentence can be attributed to the retrieval context of Startup India Seed Fund Scheme, Startup India Investor Connect, and Credit Guarantee Scheme for Startups.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence can be attributed to the retrieval context of Startup India Seed Fund Scheme, Startup India Investor Connect, and Credit Guarantee Scheme for Startups.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence can be attributed to the retrieval context of Startup Ecosystem.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The sentence does not relate to any of the other retrieval contexts.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.6666666666666666,
+        "reason": "The score is 0.67 because the sentence can be attributed to the retrieval context of 'Startup India Seed Fund Scheme (SISFS) aims to provide financial assistance to startups for proof of concept, prototype development, product trials, market entry and commercialization.' and 'How Startup India Seed Fund Will Operate'. This suggests that the sentence is relevant to the topic of Startup India Seed Fund and can be used to support the retrieval of information from the context.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence can be attributed to the retrieval context of 'Startup India Seed Fund Scheme (SISFS) aims to provide financial assistance to startups for proof of concept, prototype development, product trials, market entry and commercialization.'\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence can be attributed to the retrieval context of 'How Startup India Seed Fund Will Operate'.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The sentence does not attribute to any part of the retrieval context.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Recall",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.6666666666666666,
+        "reason": "The score is 0.67 because the expected output provides clear and relevant information about the Startup India Seed Fund Scheme, which is in line with the eligibility criteria for startups under the scheme. The supportive reasons provided by the sentences 'Incubators\n\n#### Govt assisted/Not-Govt assisted Incubators\n\nOperational for atleast 2-3 years\n\nStartups\n\n#### DPIIT-recognised Startups\n\nIncorporated less than 2 years ago' and 'Features of Startup India Seed Fund Scheme\n------------------------------------------\n\n1. Year-round \u2018Call for Applications\u2019 for Incubators and Startups\n2. Sector-agnostic\n3. No mandatory physical incubation\n4. PAN-India startup programme\n5. Startups can apply to 3 incubators simultaneously' are relevant to the retrieval context of 'G1C', 'G2C', and 'G3C'. The unsupportive reason provided by the sentence 'Eligibility Criteria\n--------------------\n\nFor Startups\n\n1. A startup, recognized by DPIIT, incorporated not more than 2 years ago at the time of application.' does not mention any specific section of the Companies Act 2013 and therefore cannot be attributed to any retrieval context.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence 'Incubators\\n\\n#### Govt assisted/Not-Govt assisted Incubators\\n\\nOperational for atleast 2-3 years\\n\\nStartups\\n\\n#### DPIIT-recognised Startups\\n\\nIncorporated less than 2 years ago' can be attributed to the retrieval context of 'G1C', 'G2C', and 'G3C'. The reason is that the sentence mentions the eligibility criteria for startups, which are mentioned in the Companies Act 2013. Specifically, it mentions the requirement for startups to be recognized by DPIIT, which is a criterion for eligibility under the Startup India Seed Fund Scheme.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The sentence 'Features of Startup India Seed Fund Scheme\\n------------------------------------------\\n\\n1. Year-round \\u2018Call for Applications\\u2019 for Incubators and Startups\\n2. Sector-agnostic\\n3. No mandatory physical incubation\\n4. PAN-India startup programme\\n5. Startups can apply to 3 incubators simultaneously' can be attributed to the retrieval context of 'G1C', 'G2C', and 'G3C'. The reason is that the sentence mentions the features of the Startup India Seed Fund Scheme, which are relevant to the eligibility criteria for startups under the scheme.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The sentence 'Eligibility Criteria\\n--------------------\\n\\nFor Startups\\n\\n1. A startup, recognized by DPIIT, incorporated not more than 2 years ago at the time of application.\\n2. The startup must have a business idea to develop a product or a service with a market fit, viable commercialization, and scope of scaling.\\n3. The startup must have a business idea' does not mention any specific section of the Companies Act 2013, and therefore cannot be attributed to any retrieval context.\"\n    }\n]"
+    }
+]

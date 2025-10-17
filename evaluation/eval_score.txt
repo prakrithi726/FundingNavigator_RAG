@@ -1,0 +1,12 @@
+Evaluation Scores for All Metrics
+
+Frameworks Used:
+- DeepEval (Ollama + smollm:1.3b) → for Answer Relevancy and Faithfulness
+- DeepEval (Ollama + llama2:7b-chat) → for Contextual Precision and Contextual Recall
+
+1. Answer Relevancy - Average Score: 0.50
+2. Faithfulness - Average Score: 0.50
+3. Contextual Precision - Average Score: 0.995
+4. Contextual Recall - Average Score: 0.683
+
+Summary: These scores were computed using DeepEval’s built-in metrics for evaluating RAG pipelines and retrieval-augmented answers.

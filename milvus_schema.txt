@@ -1,0 +1,30 @@
+Milvus Collection Schema — Startup India Website
+
+| Field Name     | Type         | Role        | Max Length | Dimension | Description                                                     |
+| -------------- | ------------ | ----------- | ---------- | --------- | --------------------------------------------------------------- |
+| chunk_id       | VARCHAR      | Primary Key | 36         | -         | Unique identifier for each text chunk.                          |
+| chunk_sequence | INT64        | -           | -          | -         | Sequential number representing the chunk’s order in a document. |
+| chunk_text     | VARCHAR      | -           | 65535      | -         | Actual text content of the chunk.                               |
+| chunk_embed    | FLOAT_VECTOR | -           | -          | 384       | Embedding vector representation of the text chunk.              |
+| doc_id         | VARCHAR      | -           | 36         | -         | Identifier linking the chunk to its parent document.            |
+| url            | VARCHAR      | -           | 255        | -         | Source URL from which the document was scraped.                 |
+| doc_timestamp  | VARCHAR      | -           | 20         | -         | Timestamp of document creation or scraping.                     |
+
+Milvus Index Configuration
+1. Embedding Vector Index
+
+Field: chunk_embed
+
+Index Type: IVF_FLAT
+
+Metric Type: L2
+
+Parameters:
+
+nlist: 128
+
+2. Document ID Index
+
+Field: doc_id
+
+Index Type: TRIE 

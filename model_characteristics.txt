@@ -1,0 +1,32 @@
+Model Documentation – Retrieval QA System
+
+
+Model Name:
+Meta LLaMA 3 (8B Instruct, local inference)
+
+Key Parameters:
+model: meta-llama-3-8b-instruct.Q4_K_M.gguf
+temperature: 0.7 (used for generation)
+context_window: 8192 tokens (larger context than Llama3 standard)
+
+Model Characteristics:
+  
+
+Transformer-based autoregressive decoder
+
+Instruction-tuned large language model optimized for retrieval-augmented QA
+
+Handles multi-turn conversations with large context window
+
+Supports reasoning, summarization, and factual QA
+
+Can run locally on systems with sufficient RAM
+  
+
+Limitations:
+
+Performance depends on quality of retrieved context
+
+Not fully factual without retrieval augmentation
+
+Resource-heavy (8B parameters)

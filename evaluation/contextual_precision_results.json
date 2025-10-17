@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 0.95,
+        "reason": "The score is 0.95 because the relevant nodes are ranked higher than irrelevant nodes. In this case, the three 'yes' verdicts are more relevant to the input than the single 'no' verdict. The reasons for the 'yes' verdicts mention the eligibility criteria for Skill Upgradation and Mahila Coir Yojana, which align with the input. On the other hand, the 'no' verdict does not provide any relevant information about the scheme.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The scheme is eligible for rural women artisans in regions producing coir fibre, as stated in the first document.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The scheme has twofold objectives to provide skills that give employability to women and to provide competencies and skills that enable women to become self-employed/entrepreneurs, as mentioned in the second document.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The scheme is envisaged to provide an interface for rural women to approach the government for availing their entitlements and for empowering them through training and capacity building, as stated in the third document.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The term 'Mahila Coir Yojana' is not mentioned anywhere in the provided documents.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The scheme is an initiative by the Coir Department, as stated in the fourth document.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the policy provides specific support for women-led startups/entrepreneurs, which are ranked higher than those without such support. The reason for the 'no' verdict is the lack of mention of any specific funding or support for these groups in the policy.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The policy provides for initial capital costs and recurring costs of management of TBI for a 3-year period, extendable by another 2 years based on performance.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"There is no mention of any specific funding or support for women-led startups/entrepreneurs in the policy.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the retrieval contexts provide relevant and useful information to answer the input question. The 'yes' verdicts highlight the startup's understanding of different funding options and their ability to navigate the funding landscape, while the 'no' verdict demonstrates the importance of having a clear plan in place for raising funds at the ideation stage. However, the score could be higher if more information was provided on how to raise funds at the ideation stage.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The document mentions three different types of startup fundings: Equity Financing, Debt Financing, and Grants. This indicates that the startup has a clear understanding of the various funding options available to them.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The document highlights the importance of matching the source of funding with the stage of operations of the startup. This demonstrates the startup's awareness of the funding landscape and their ability to navigate it.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The document does not provide any information on how to raise funds at the ideation stage, which is a critical stage for startups. This suggests that the startup may not have a clear plan in place for raising funds at this stage.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the relevant nodes are ranked higher than irrelevant nodes. In this case, the company can apply for assistance above Rs.50 lakh as it meets the eligibility criteria mentioned in the retrieval context. However, the other nodes do not meet the eligibility criteria and are therefore ranked lower. For example, node 1 does not meet the requirement of at least 51% shareholding by Scheduled Tribes entrepreneurs for the past 12 months with management control, while node 3 has a promoter holding more than or equal to 20% of the shares in an ineligible company or LLP. Additionally, node 4 is ineligible as it is a partner in an ineligible LLP or is a co-promoter in an ineligible company, except in cases where the latter ineligible LLP/company operates in a non-biotech domain.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The company can apply for assistance above Rs.50 lakh as it meets the eligibility criteria mentioned in the retrieval context.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The company does not meet the eligibility criteria mentioned in the retrieval context, specifically the requirement of at least 51% shareholding by Scheduled Tribes entrepreneurs for the past 12 months with management control.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The company does not meet the eligibility criteria mentioned in the retrieval context, specifically the requirement of at least 51% shareholding by Scheduled Castes entrepreneurs for the past 12 months with management control.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The company is ineligible as it has a promoter holding more than or equal to 20% of the shares in an ineligible company or LLP, except in cases where the latter ineligible company/LLP operates in a non-biotech domain.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The company is ineligible as it is a partner in an ineligible LLP or is a co-promoter in an ineligible company, except in cases where the latter ineligible LLP/company operates in a non-biotech domain.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the context provides a clear and comprehensive explanation of the difference between seed funding and venture capital funding, including relevant information on the stage of the startup, type of investors involved, and amount of money invested. Additionally, the context acknowledges the limitations of its scope by mentioning angel investors and crowdfunding, as well as debt financing options available at later stages. This ranking is based on the relevance of the information provided in the context to the input question.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The context clearly explains the difference between seed funding and venture capital funding, including the stage of the startup, the type of investors involved, and the amount of money invested. The context also provides examples of different types of funding sources available at each stage.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The context does not provide any information about angel investors or crowdfunding, which are typically associated with seed funding. Additionally, the context does not mention any debt financing options, which are often available at later stages.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the context provides relevant and useful information to answer the question. The presence of multiple 'yes' verdicts indicates that the context is comprehensive and covers all aspects of the topic. However, the absence of any 'no' verdicts suggests that there is no irrelevant information in the context, which contributed to the high score. Additionally, the reasons provided by the 'yes' verdicts are specific and relevant to the question, making them more informative than a simple 'yes' or 'no' answer.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The context provides a list of states with startup policies for women, which is relevant to the question.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The context mentions specific incentives and subsidies offered by each state to promote startups led by women.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The context does not provide any information on the number of states with startup policies for men.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the relevant nodes are ranked higher than the irrelevant nodes. In this case, both 'yes' verdicts provide contextual information related to tax exemption under section 80IAC and its eligibility criteria, while the single 'no' verdict does not provide any relevant information. Therefore, the 'yes' verdicts should be ranked higher than the 'no' verdict.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The context clearly mentions the tax exemption under section 80IAC and its eligibility criteria, including the requirement for DIPP recognition. The notifications provided also validate the startup's eligibility for tax-related benefits.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The context provides information on the Inter-Ministerial Board setup by the Department of Industrial Policy and Promotion to validate startups for granting tax-related benefits, and the conditions required for eligibility.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The context does not provide any information on tax exemption under section 80IAC or its eligibility criteria, and therefore cannot be considered relevant to the topic.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the context provides relevant and useful information about funding support for Indian startups. The three 'yes' verdicts in the retrieval contexts provide a comprehensive list of funding schemes available for Indian startups, including Startup India Seed Fund Scheme, Startup India Investor Connect, and Credit Guarantee Scheme for Startups. These schemes are ranked higher than the 'no' verdict because it does not mention any other funding support schemes beyond what is already provided in the context. Therefore, the score is 1.00.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"It provides information on various funding support schemes for Indian startups, including Startup India Seed Fund Scheme, Startup India Investor Connect, and Credit Guarantee Scheme for Startups.\"\n    },\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The context provides a list of funding support schemes available for Indian startups, including Fund of Funds, Startup India Investor Connect, and Startup Ecosystem.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The context does not mention any other funding support schemes beyond the ones listed.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the relevant nodes are ranked higher than the irrelevant nodes. In this case, the node with a 'yes' verdict has a clear and specific reason for being eligible to apply, while the node with a 'no' verdict lacks any information about its location and therefore cannot be determined whether it is in Tier 2 or Tier 3 cities. As a result, the 'yes' verdict should be ranked higher than the 'no' verdict.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The context clearly states that startups in Tier 2 and Tier 3 cities are eligible to apply, and there is no explicit exclusion of such startups from the program.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The context does not provide any information about the location of the startups, so it cannot be determined whether they are in Tier 2 or Tier 3 cities.\"\n    }\n]"
+    },
+    {
+        "name": "Contextual Precision",
+        "threshold": 0.5,
+        "success": true,
+        "score": 1.0,
+        "reason": "The score is 1.00 because the relevant nodes are ranked higher than the irrelevant nodes in the retrieval contexts. In this case, the first node has a 'yes' verdict and provides specific information about the availability of SISFS benefits for startups, making it more relevant to the input. On the other hand, the second node has a 'no' verdict without providing any information about the partner's ability to avail SISFS benefits, making it less relevant. Therefore, the first node should be ranked higher than the second node in terms of contextual precision.",
+        "strict_mode": false,
+        "evaluation_model": "llama2:7b-chat (Ollama)",
+        "error": null,
+        "evaluation_cost": 0.0,
+        "verbose_logs": "Verdicts:\n[\n    {\n        \"verdict\": \"yes\",\n        \"reason\": \"The context clearly mentions the availability of SISFS benefits for startups, and the eligibility criteria for the same.\"\n    },\n    {\n        \"verdict\": \"no\",\n        \"reason\": \"The context does not provide any information about the partner's ability to avail SISFS benefits.\"\n    }\n]"
+    }
+]

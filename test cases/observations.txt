@@ -1,0 +1,10 @@
+During the process of generating predicted answers, I initially noticed that some document chunks did not have embeddings. To resolve this, I re-ingested the cleaned files into the database, ensuring that all chunks now have embeddings. After rerunning the retrieval process, I was able to see relevant answers being returned from the database.
+
+For generating answers using LLaMA 3 8B instruct, I experimented with different temperatures:
+
+
+1) Temperature 0.3: Answers are deterministic, concise, and factual, sticking closely to the question.
+
+2) Temperature 0.7: Answers are balanced between factual information and creative explanation, providing more context or examples.
+
+3) Temperature 1.0: Answers are more creative and verbose, sometimes adding extra context or illustrative examples, giving a richer narrative.

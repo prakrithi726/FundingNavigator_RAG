@@ -1,0 +1,7 @@
+| Matrices                      | LLaMA 3 (8B)    | Example (Token size = 10) | Description                                 |
+| ----------------------------- | --------------- | ------------------------- | ------------------------------------------- |
+| **Input Embedding**           | 4096 × 4096     | 10 × 4096                 | sequence length × embedding dimension       |
+| **K (Key Matrix)**            | 4096 × 32 × 128 | 10 × 32 × 128             | 32 attention heads, 128 dims each           |
+| **V (Value Matrix)**          | 4096 × 32 × 128 | 10 × 32 × 128             | same as K, carries contextual info          |
+| **Score / Attention Pattern** | 4096 × 4096     | 10 × 10                   | attention weights between tokens            |
+| **Score × V (Final Output)**  | 4096 × 4096     | 10 × 4096                 | contextually weighted token representations |

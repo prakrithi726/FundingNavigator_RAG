@@ -1,10 +1,98 @@
-During the process of generating predicted answers, I initially noticed that some document chunks did not have embeddings. To resolve this, I re-ingested the cleaned files into the database, ensuring that all chunks now have embeddings. After rerunning the retrieval process, I was able to see relevant answers being returned from the database.
+Observations – Funding Navigator AI
+Embedding and Data Ingestion
 
-For generating answers using LLaMA 3 8B instruct, I experimented with different temperatures:
+For embedding generation, I used the all-MiniLM-L6-v2 model (Sentence Transformers), which produces 384-dimensional vectors and is lightweight enough for faster processing.
 
+While testing the retrieval pipeline, I noticed that some document chunks were not returning relevant results. On debugging, I found that a few chunks did not have embeddings generated for them.
 
-1) Temperature 0.3: Answers are deterministic, concise, and factual, sticking closely to the question.
+This was due to incomplete ingestion of cleaned markdown files into the vector database (Milvus).
 
-2) Temperature 0.7: Answers are balanced between factual information and creative explanation, providing more context or examples.
+To resolve this:
 
-3) Temperature 1.0: Answers are more creative and verbose, sometimes adding extra context or illustrative examples, giving a richer narrative.
+-I re-ran the embedding pipeline
+
+-Ensured all chunks were embedded using the MiniLM model
+
+-Re-inserted them into Milvus
+
+After fixing this, retrieval improved significantly, and relevant chunks were consistently returned.
+
+To maintain stability during embedding, I processed chunks in small batches (batch size = 20) to avoid memory spikes, and inserted them into Milvus in batches (batch size = 50).
+
+This whole issue highlighted the importance of data integrity, since even a few missing embeddings directly impacted retrieval quality.
+
+Retrieval and Vector Storage (Milvus)
+
+Used Milvus for storing and retrieving embeddings
+
+Each chunk was stored along with metadata such as:
+
+-chunk_id
+
+-document_id
+
+-source URL
+
+-chunk order
+
+Retrieval worked well once embeddings were complete
+
+Missing embeddings earlier caused:
+
+-Irrelevant or empty results
+
+-Incomplete answers from the LLM
+
+-LLM Response Behaviour (LLaMA 3 8B Instruct via Ollama)
+
+For answer generation, I used LLaMA 3 8B Instruct model running locally via Ollama.
+
+I experimented with different temperature values:
+
+1) Temperature = 0.3
+
+Responses were deterministic and consistent
+
+Stayed very close to retrieved chunks
+
+Concise and factual
+
+Best for policy-based queries
+
+2) Temperature = 0.7
+
+Balanced responses
+
+Added explanations and some context
+
+More natural and slightly detailed
+
+3) Temperature = 1.0
+
+More creative and verbose
+
+Added extra context beyond retrieved chunks
+
+Sometimes less strictly grounded
+
+This showed the importance of parameter tuning, since temperature directly affects how the model generates responses.
+
+Key Takeaways:
+
+-Using a lightweight embedding model like MiniLM helps with speed, but requires clean and complete data
+
+-Missing embeddings break the retrieval pipeline in RAG systems
+
+The system depends on both:
+
+-data integrity (all chunks must be embedded)
+
+-parameter tuning (temperature affects output style)
+
+Batch processing is important for stable embedding generation and efficient storage
+
+Conclusion
+
+After resolving the embedding issue, the system was able to retrieve relevant chunks from Milvus and generate accurate, context-aware answers using LLaMA 3.
+
+From experiments, a temperature range between 0.3 and 0.7 gave the best balance between factual correctness and explanation.

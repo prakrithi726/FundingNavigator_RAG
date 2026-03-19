@@ -1,7 +1,10 @@
-| Matrices                      | LLaMA 3 (8B)    | Example (Token size = 10) | Description                                 |
-| ----------------------------- | --------------- | ------------------------- | ------------------------------------------- |
-| **Input Embedding**           | 4096 × 4096     | 10 × 4096                 | sequence length × embedding dimension       |
-| **K (Key Matrix)**            | 4096 × 32 × 128 | 10 × 32 × 128             | 32 attention heads, 128 dims each           |
-| **V (Value Matrix)**          | 4096 × 32 × 128 | 10 × 32 × 128             | same as K, carries contextual info          |
-| **Score / Attention Pattern** | 4096 × 4096     | 10 × 10                   | attention weights between tokens            |
-| **Score × V (Final Output)**  | 4096 × 4096     | 10 × 4096                 | contextually weighted token representations |
+| Matrix                      | Shape (General) | Example (Token size = 10) | Description                                                              |
+| --------------------------- | --------------- | ------------------------- | ------------------------------------------------------------------------ |
+| **Input Embedding**         | n × 4096        | 10 × 4096                 | Each token is converted into a 4096-dimensional vector                   |
+| **Q (Query Matrix)**        | n × 32 × 128    | 10 × 32 × 128             | Represents what each token is querying (32 attention heads)              |
+| **K (Key Matrix)**          | n × 32 × 128    | 10 × 32 × 128             | Represents what each token contains (used for matching relevance)        |
+| **V (Value Matrix)**        | n × 32 × 128    | 10 × 32 × 128             | Carries contextual information for each token                            |
+| **Attention Scores (Q·Kᵀ)** | n × n           | 10 × 10                   | Shows how much each token attends to every other token                   |
+| **Attention Output**        | n × 4096        | 10 × 4096                 | Final context-aware representation after combining attention with values |
+
+Note: n represents the number of tokens in the input sequence. Multi-head attention (32 heads) allows the model to capture different contextual relationships simultaneously.

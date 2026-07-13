@@ -1,0 +1,42 @@
+# Backend
+fastapi
+uvicorn
+
+# Frontend
+streamlit
+
+# Vector Database
+pymilvus
+
+# Embeddings
+sentence-transformers
+
+# RAG Framework
+langchain
+
+# LLM
+ollama
+
+# Evaluation
+deepeval
+
+# Web Scraping
+selenium
+beautifulsoup4
+markdownify
+
+# Data Processing
+pandas
+numpy
+
+# HTTP Requests
+requests
+
+# Environment Variables
+python-dotenv
+
+# Validation
+pydantic
+
+# Session Management
+redis

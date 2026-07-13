@@ -9,7 +9,7 @@ with open(INPUT_FILE, "r", encoding="utf-8") as f:
     questions = json.load(f)
 
 # Temperatures to test
-temperatures = [0.2, 0.8, 1.2]
+temperatures = [0.3, 0.7, 1.0]
 
 for temp in temperatures:
     print(f"\n=== Generating answers with temperature {temp} ===")

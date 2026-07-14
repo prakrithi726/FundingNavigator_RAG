@@ -23,4 +23,6 @@ What is the difference between seed funding and venture capital funding?
 
 ## Retrieved Context
 
+See **Retrieved_Context.png**
+
 The retrieved context displays the most relevant chunks used to generate the answer.

@@ -1,124 +1,103 @@
 # Funding Navigator AI
 
-Funding Navigator AI is a Retrieval-Augmented Generation (RAG) project that helps users retrieve information about Startup India funding schemes, government policies, grants, and startup support programs using semantic search.
+Funding Navigator AI is an end-to-end Retrieval-Augmented Generation (RAG) application that helps users explore Startup India schemes, funding opportunities, government policies, tax benefits, and startup support initiatives through natural language queries.
 
-The project collects information from Startup India resources, preprocesses the data, generates embeddings, stores them in Milvus, and retrieves relevant information through a FastAPI backend.
+The application retrieves relevant information using semantic search with Milvus and generates grounded responses using a locally hosted Meta Llama 3 8B Instruct model through Ollama.
 
 ---
 
 ## Features
 
-- Scrapes Startup India webpages using Selenium and BeautifulSoup
-- Cleans and preprocesses collected documents
-- Semantic document chunking using LangChain
-- SentenceTransformer embeddings
-- Milvus vector database for semantic retrieval
-- FastAPI REST API for question answering
-- DeepEval-based retrieval evaluation
-- Ollama (Llama 3 8B) used for answer generation and evaluation experiments
+- Semantic search over Startup India documents
+- Retrieval-Augmented Generation (RAG)
+- Local LLM inference using Meta Llama 3 8B Instruct (Ollama)
+- Milvus Vector Database for semantic retrieval
+- FastAPI backend
+- Streamlit frontend
+- HTML to Markdown document preprocessing
+- Recursive text chunking using LangChain
+- SentenceTransformer embeddings (all-MiniLM-L6-v2)
+
+---
+
+## System Architecture
+
+```
+User Question
+      │
+      ▼
+Streamlit Frontend
+      │
+      ▼
+FastAPI Backend
+      │
+      ▼
+SentenceTransformer Embedding
+      │
+      ▼
+Milvus Vector Database
+      │
+      ▼
+Top-5 Relevant Chunks
+      │
+      ▼
+Meta Llama 3 8B Instruct (Ollama)
+      │
+      ▼
+Generated Response
+```
 
 ---
 
 ## Tech Stack
 
-- Python
-- FastAPI
-- LangChain
-- SentenceTransformers
-- Milvus
-- Ollama (Llama 3 8B)
-- DeepEval
-- Selenium
-- BeautifulSoup
+| Component | Technology |
+|-----------|------------|
+| Frontend | Streamlit |
+| Backend | FastAPI |
+| LLM | Meta Llama 3 8B Instruct (Ollama) |
+| Vector Database | Milvus |
+| Embedding Model | SentenceTransformer (all-MiniLM-L6-v2) |
+| Framework | LangChain |
+| Web Scraping | Selenium |
+| Document Processing | Markdownify |
+| Containerization | Docker |
 
 ---
 
 ## Project Workflow
 
-```text
-Startup India Website
-        │
-        ▼
-Data Collection
-        │
-        ▼
-Data Cleaning
-        │
-        ▼
-LangChain Chunking
-        │
-        ▼
-SentenceTransformer Embeddings
-        │
-        ▼
-Milvus Vector Database
-        │
-        ▼
-FastAPI Backend
-        │
-        ▼
-Relevant Chunks Retrieved
-        │
-        ▼
-Llama 3 (Ollama)
-```
+1. Scrape Startup India webpages using Selenium.
+2. Convert HTML into Markdown documents.
+3. Clean and preprocess the extracted text.
+4. Split documents into chunks using LangChain's RecursiveCharacterTextSplitter.
+5. Generate embeddings using SentenceTransformer.
+6. Store embeddings in Milvus Vector Database.
+7. Retrieve the most relevant chunks for a user query.
+8. Pass the retrieved context to Meta Llama 3 through Ollama.
+9. Generate a grounded response.
+10. Display the answer using the Streamlit interface.
 
 ---
 
-## API Endpoints
+## Sample Questions
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/` | Health check |
-| POST | `/search` | Retrieve relevant chunks for a question |
-| POST | `/batch_search` | Retrieve answers for multiple questions |
-
----
-
-## Project Structure
-
-```text
-genai-project/
-│
-├── app.py
-├── qa.py
-├── query_milvus.py
-├── chunking.py
-├── clean.py
-├── html_to_markdown.py
-├── retrieve_chunks.py
-├── requirements.txt
-└── README.md
-```
-
----
-
-## Running the Project
-
-```bash
-pip install -r requirements.txt
-python -m uvicorn app:app --reload
-```
-
-Open:
-
-```
-http://127.0.0.1:8000/docs
-```
-
----
-
-## Documentation
-
-Detailed API execution screenshots and sample test cases are available in the **Test Cases** document included in this repository.
+- What is Karnataka's Startup Policy?
+- What is tax exemption under Section 80IAC?
+- Can a Partnership Firm avail SISFS benefits?
+- What are different funding support schemes for Indian startups?
+- What is the eligibility criteria for Mahila Coir Yojana?
 
 ---
 
 ## Future Improvements
 
-- Hybrid search
+- Semantic chunking for improved retrieval quality
+- Hybrid retrieval (Dense + BM25)
+- Source citation support
+- Conversation history
 - Cloud deployment
-- Conversational memory
+- Support for multiple LLMs
 
 ---
 
@@ -126,5 +105,5 @@ Detailed API execution screenshots and sample test cases are available in the **
 
 **Prakrithi Jain**
 
-B.E. Computer Science and Engineering  
+B.Tech in Computer Science and Engineering  
 BMS College of Engineering

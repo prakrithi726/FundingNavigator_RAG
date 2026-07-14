@@ -116,7 +116,6 @@ Detailed API execution screenshots and sample test cases are available in the **
 
 ## Future Improvements
 
-- Streamlit frontend
 - Hybrid search
 - Cloud deployment
 - Conversational memory
